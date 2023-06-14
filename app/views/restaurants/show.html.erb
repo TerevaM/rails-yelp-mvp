@@ -1,0 +1,12 @@
+<h2><%= @restaurant.name %></h2>
+<section>
+<h5>content</h5>
+  <p>Addr : <%= @restaurant.address %></p>
+  <p>Phone : <%= @restaurant.phone_number %></p>
+  <p>category : <%= @restaurant.category %></p>
+</section>
+
+<div class="buttons">
+<%= link_to 'all reviews', restaurant_reviews_path(@restaurant) %>
+<%= link_to 'all restaurants', restaurants_path %>
+</div>
